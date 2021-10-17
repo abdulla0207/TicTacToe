@@ -21,6 +21,7 @@ public class Main {
 
         while(playerPositions.size() < 10){
 
+            //Checks the size of positions, and if it is 8 than Game Ends.
             if(playerPositions.size() == 8){
                 System.out.println("GAME OVER! TIE");
                 break;
@@ -28,7 +29,12 @@ public class Main {
 
             System.out.println("Choose number from 1 - 9");
             playerPlacePiece = scanner.nextInt();
+            if(playerPlacePiece > 9){
+                System.out.println("PLEASE CHOOSE NUMBER FROM 1 - 9\nTRY AGAIN!");
+                playerPlacePiece = scanner.nextInt();
+            }
 
+            //Checks if the place is valid for PLayer
             while(true) {
                 if (playerPositions.contains(playerPlacePiece)) {
                     System.out.println("This place is taken. Try again");
@@ -43,6 +49,7 @@ public class Main {
             playerPositions.add(playerPlacePiece);
             input.userInput(b, playerPlacePiece, "player");
 
+            //Checks if the place is valid for Computer
             while(true) {
                 if (computerPositions.contains(rand)) {
                     rand = random.nextInt(9) + 1;
