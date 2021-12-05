@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class UserInput {
-
+    // This method receives 2D board array, users or computers position and the turn(user or computer).
     public void userInput(char[][] b, int placePiece, String user) {
         Random random = new Random();
        char characterXorO = 'c';

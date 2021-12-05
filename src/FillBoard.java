@@ -1,4 +1,5 @@
 public class FillBoard {
+    // This method loops through the indices of the 2D array and puts relevant symbols to it
     public void fillBoard(char[][] b) {
 
         for (int i = 0; i < b.length; i++) {

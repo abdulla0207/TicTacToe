@@ -1,5 +1,5 @@
 public class PrintBoard {
-
+    // This method prints the board
     public void print(char[][] b) {
 
         for (char[] chars : b) {

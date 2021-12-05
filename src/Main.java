@@ -16,12 +16,15 @@ public class Main {
 
         int rand;
         int playerPlacePiece;
+        // Lists to store taken positions in board for user and computer
         List<Integer> playerPositions = new ArrayList<>();
         List<Integer> computerPositions = new ArrayList<>();
         List<Integer> playerWinning = new ArrayList<>();
         List<Integer> computerWinning = new ArrayList<>();
 
         Winner winner = new Winner();
+
+        // The array of winning positions
         int[][] winPositions = {
                 {1, 2, 3},
                 {4, 5, 6},
